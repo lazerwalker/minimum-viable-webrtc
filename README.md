@@ -6,7 +6,7 @@ Anyone who visits a copy of this webapp will start streaming their webcam video 
 
 There are two main pieces:
 
-1. An [Azure SignalR service](https://azure.microsoft.com/en-us/services/signalr-service/?WT.mc_id=webrtc-github-emwalker) instance and a few [Azure functions](https://azure.microsoft.com/en-us/services/functions/?WT.mc_id=webrtc-github-emwalker) to provide real-time text communication across clients.
+1. An [Azure SignalR service](https://azure.microsoft.com/services/signalr-service/?WT.mc_id=spatial-8208-emwalker) instance and a few [Azure functions](https://azure.microsoft.com/services/functions/?WT.mc_id=spatial-8208-emwalker) to provide real-time text communication across clients.
    - When a new client joins: it can broadcast its peer ID to all connected clients
    - When two clients are trying to negotiate a p2p WebRTC connection: they can send WebRTC signaling data directly to each other
    - This is also theoretically usable as a text/data comms channel to send messages to _all_ clients, not just ones you have a WebRTC data channel open with
